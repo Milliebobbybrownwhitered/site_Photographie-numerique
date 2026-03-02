@@ -150,3 +150,43 @@ body { margin: 0; font-family: Arial, sans-serif; }
 .nav-links a:hover {
     color: #83dcf4;
 }  */
+
+
+.footer {
+    background-color: #002D62; /* Rappel de ta couleur navbar */
+    color: white;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Important pour le responsive ! */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-col {
+    flex: 1; /* Chaque colonne prendra la même largeur */
+    min-width: 200px; /* Taille minimale avant de passer à la ligne */
+}
+
+.footer-col h4 { margin-bottom: 1rem; color: #83dcf4; }
+
+.footer-col ul { list-style: none; padding: 0; }
+
+.footer-col a { color: white
+    ; text-decoration: none;
+    margin: 10px;
+     }
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 10px;
+    font-size: 0.8rem;
+}

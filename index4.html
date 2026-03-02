@@ -3,28 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Traitement d'image</title>
-<h2>Utilisation de la programmation Python sur les pixels</h2>
-<p> Python est un language de programmation qui nous permet ici de travailler sur les pixels d’une image de manière pratique et simple.Une image numérique est composée de milliers de petits points appelés pixels et chacunes de ces pixels contient des nombres qui représentent les couleurs (rouge, vert et bleu).Avec Python, on peut ouvrir une image, lire les valeurs de chaque pixel et modifier ces nombres pour transforme une image,par exemple en la rendant plus claire ou en noir et blanc. On utilise Python parce que c’est un langage plus pratique à utiliser pour faire des calculs rapidement. Cela permet de mieux comprendre comment fonctionne une image numérique tout en apprenant les bases de la programmation.De plus chaque pixel a des coordonées(x;y).</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/o2fyxbAibKk?si=pCcm_Xb4CrhqUwTt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<p><img src="./image/graphique_pixel.png" alt=""></p>
-<p>Par exemple ici,on a un pixel de coordonnées(100;400),un pixel de coordonnées(700;200) et un pixel de coordonnées(799;599).On constate dans le shèma ci-dessus,le pixel de coordonnées(0;0)se trouve en haut à gauche de l'image.Si l'image fait 800 pixels de largeur et 600 pixels de longueur,le pixel de coordonnées(100;400)sera en bas à gauche de l'image,le pixel de coordonnées(700;200)sera en haut à droite de l'image et le pixel de coordonnées(799;599)sera en bas à droite de l'image.   </p>
+    <link rel="stylesheet" href="index4.css">
+    <title>Traitement d'images</title>
+
 </head>
 <body>
-<p><img src="./image/cat-lying-on-a-sofa-being-cuddled-16-9.png" alt=""><p>
-</p><img src="./image/Capture d’écran 2026-02-21 003804.png" alt="">
+    <nav class="navbar">
+        <div class="logo">MonSite</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index2.html">historique des images</a></li>
+            <li><a href="index3.html">capteur photo</a></li>
+            <li><a href="index4.html">traitement 'images</a></li>
+            <li><a href="index5.html">métadonnées Exif</a></li>
+        </ul>
+    </nav>
+
+<h3>Traitement d'images</h3>
+<h2>Utilisation de la programmation Python sur les pixels</h2>
+<p> Python est un language de programmation qui nous permet ici de travailler sur les pixels d’une image de manière pratique et simple.Une image numérique est composée de milliers de petits points appelés pixels et chacuns de ces pixels contient des nombres qui représentent les couleurs (rouge, vert et bleu).Avec Python, on peut ouvrir une image, lire les valeurs de chaque pixel et modifier ces nombres pour transformr une image,par exemple en la rendant plus claire ou en noir et blanc. On utilise Python parce que c’est un langage plus pratique à utiliser pour faire des calculs rapidement. Cela permet de mieux comprendre comment fonctionne une image numérique tout en apprenant les bases de la programmation.De plus chaque pixel a des coordonées(x;y).</p>
+
+
+    <div class="container">
+        <figure class="iframe-wrapper">
+             
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o2fyxbAibKk?si=pCcm_Xb4CrhqUwTt" title="YouTube video player" frameborder="0" allow="allowfullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <figcaption>Capteur photo numérique</figcaption>
+        </figure>
+    </div>
+
+
+    <figure class="image-container">
+        <img src="./image/graphique_pixel.png" alt="exemple" class="center">
+        <figcaption>pixel</figcaption>
+    </figure>
+  
+
+<p>Par exemple ici,on a un pixel de coordonnées(100;400),un pixel de coordonnées(700;200) et un  autre pixel de coordonnées(799;599).On constate dans le shèma ci-dessus,le pixel de coordonnées(0;0)se trouve en haut à gauche de l'image.Si l'image fait 800 pixels de largeur et 600 pixels de longueur,le pixel de coordonnées(100;400)sera en bas à gauche de l'image,le pixel de coordonnées(700;200)sera en haut à droite de l'image et le pixel de coordonnées(799;599)sera en bas à droite de l'image.   </p>
+<figure class="image-container">
+       <img src="./image/cat-lying-on-a-sofa-being-cuddled-16-9.png" alt="exemple" class="center">
+        <figcaption>pixel</figcaption>
+    </figure>
+    <figure class="image-container">
+        <img src="./image/Capture d’écran 2026-02-21 003804.png" alt="exemple" class="center">
+        <figcaption>pixel</figcaption>
+    </figure>
+
 <p>"from PIL import Image" : pour travailler sur les images on doit avoir besoin d'une extension de Python (appelé bibliothèque).
 Cette bibliothèque se nomme PIL.
-• "img = Image.open("./image/Capture d’écran 2026-02-21 003804.png")"; c'est grâce à cette ligne qu'on doit montrer qu'on pourra travailler avec l'image
+• "img = Image.open("./image/Capture d’écran 2026-02-21 003804.png")"; c'est grâce à cette ligne qu'on doit montrer qu'on pourra travailler avec l'image.
 "./image/Capture d’écran 2026-02-21 003804.png".Pour travailler avec une autre image, il suffit de remplacer "./image/Capture d’écran 2026-02-21 003804.png" par un autre nom (attention,le fichier image devra se trouver dans le même dossier que le ficher du programme Python).
 • "r,v,b= img.getpixel((723,406))"cette ligne récupère les valeurs du canal rouge (r), du canal vert (V) et du canal bleu (b) du pixel de coordonnées (723,406).Dans la suite du programme, r correspondra à la valeur du canal rouge, v correspondra à la valeur du canal vert et b correspondra à la valeur du canal bleu
-• "print("canal rouge : ",r,"canal vert : ",v, "canal bleu : ",b)"permet d'imprimer le résultat
+• "print("canal rouge : ",r,"canal vert : ",v, "canal bleu : ",b)"permet d'imprimer le résultat.
 <h2>Créer le négatif d'une image</h2>
-<p><img src="./image/Capture d’écran 2026-02-22 152943.png" alt=""></p>
-<p>Pour obtenir le négatif d’une image avec Python, on commence par ouvrir l’image à l’aide d’une bibliothèque nommé Pillow.Tout d'abord
+<figure class="image-container">
+        <img src="./image/Capture d’écran 2026-02-21 003804.png" alt="exemple" class="center">
+        <figcaption>pixel</figcaption>
+    </figure>
+<p><img src="./image/Capture d’écran 2026-02-22 152943.png" alt="exemple" class="center"></p>
+<p>Pour obtenir le négatif d’une image avec Python, on commence par ouvrir l’image à l’aide d’une bibliothèque nommé Pillow(PIL).Tout d'abord
 ,il suffit d’inverser ces valeurs.Il faut remplacer chaque composante par 255 moins sa valeur (255 − r).On fait cela pour tous les pixels de l’image à l’aide d’une boucle puis on enregistre la nouvelle image obtenue.Le résultat est une image où les couleurs sont inversées où on peut remarquer que les zones claires deviennent foncées et les zones foncées deviennent claires.</p>
+<p><img src="./image/509e7025-0214-4ad0-bf27-c197537be878" alt="exemple" class="center"></p>
 <h2>Transformer une image en couleur en une image en niveaux de gris</h2>
-<p><img src="./image/Capture d’écran 2026-02-22 161257.png" alt=""></p>
-<p>Pour transformer une image en couleur en image en niveaux de gris avec Python, on commence par ouvrir l’image à l’aide d’une bibliothèque nommé Pillow.D'abord pour obtenir une image en niveaux de gris à l'aide d'une image en couleur,on calcule pour chaque pixel une seule valeur appelée niveau de gris.On fait la moyenne des trois composantes : (r + v + b) ÷ 3. Ensuite, on remplace les trois valeurs du pixel par cette même valeur (gris, gris, gris).Puis en faisant cela pour tous les pixels de l’image, on supprime les couleurs et on obtient une image composée uniquement de différentes nuances de gris,à partir du noir jusqu'au blanc.</p>
+<p><img src="./image/Capture d’écran 2026-02-22 161257.png" alt="exemple" class="center"></p>
+<p>Pour transformer une image en couleur en image en niveaux de gris avec Python, on commence par ouvrir l’image à l’aide d’une bibliothèque nommé Pillow(PIL).D'abord pour obtenir une image en niveaux de gris à l'aide d'une image en couleur,on calcule pour chaque pixel une seule valeur appelée niveaux de gris.On fait la moyenne des trois composantes : (r + v + b) ÷ 3. Ensuite, on remplace les trois valeurs du pixel par cette même valeur (gris, gris, gris).Puis en faisant cela pour tous les pixels de l’image, on supprime les couleurs et on obtient une image composée uniquement de différentes nuances de gris,à partir du noir jusqu'au blanc.</p>
+<p><img src="./image/0b1df89a-e260-49fd-b15a-b1c116dc06b4" alt="exemple" class="center"></p>
 </html>

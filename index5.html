@@ -3,23 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index5.css">
     <title>Métadonnées</title>
 </head>
 <body>
-<h2>Les métadonnéés et EXIF</h2>
-<p>Lors d'une prise de photo avec un appareil photo numérique,toute une série d'informations en arrière-plan ainsi que des données d'image, sont enregistrées et sont appellés métadonnées. Elles peuvent inclure des informations sur l'appareil photo, l'objectif et les réglages de prise de vue utilisés mais aussi des informations facultatives concernant (le photographe,l'emplacement,la date,l'heure...).On retrouve aussi des informations sur l'image elle-meme(définition,résolution...). L'enregistrement des métadonnées des photos numériques s'effectue sous forme de données EXIF et offre de nombreux avantages pratiques.Mis à part,la création de l'enregistrement complet d'une image, elles permettent facilement la recherche de fichiers dans votre bibliothèque de photos, ce qui simplifie votre flux de travail mais aussi vous pouvez facilement filtrer les photos stockées sur votre appareil de stockage en fonction des caractéristiques de l’image. Il est utile pour les photographes d’apprendre à lire et interpréter le format EXIF pour simplifier le catalogage des images.
+    <nav class="navbar">
+        <div class="logo">MonSite</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index2.html">historique des images</a></li>
+            <li><a href="index3.html">capteur photo</a></li>
+            <li><a href="index4.html">traitement 'images</a></li>
+            <li><a href="index5.html">métadonnées Exif</a></li>
+        </ul>
+    </nav>
+
+<h3>Les métadonnées et EXIF</h3>
+<p>Lors d'une prise de photo avec un appareil photo numérique,toute une série d'informations en arrière-plan ainsi que des données de l'image sont enregistrées et sont appellés des métadonnées. Elles peuvent inclure des informations sur l'appareil photo, l'objectif et les réglages de prise de vue utilisés mais aussi des informations facultatives concernant (le photographe,l'emplacement,la date,l'heure...).On retrouve aussi des informations sur l'image elle-meme(la définition,la résolution...). L'enregistrement des métadonnées des photos numériques s'effectue sous forme de données EXIF et offre de nombreux avantages pratiques.Mis à part la création de l'enregistrement complet d'une image, elles permettent facilement la recherche de fichiers dans votre bibliothèque de photos, ce qui simplifie votre flux de travail mais aussi vous pouvez facilement filtrer les photos stockées sur votre appareil de stockage en fonction des caractéristiques de l’image. Il est utile pour les photographes d’apprendre à lire et interpréter le format EXIF pour simplifier le catalogage des images.
 Pour en savoir plus sur une photo vue sur un site web, vous pouvez vous référer aux données EXIF, à condition que le site utilise le fichier d’origine de la photo.La plupart des personnes préfèrent supprimer le fichier EXIF avant de charger leurs images sur un site web afin de protéger leurs informations personnelles,également les données de géolocalisation.
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/UKJpfXdLC5I?si=uOMFYbCB1EvdXChy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+
+
+    <div class="container">
+        <figure class="iframe-wrapper">
+             
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UKJpfXdLC5I?si=uOMFYbCB1EvdXChy" title="YouTube video player" frameborder="0" allow="allowfullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <figcaption>Les métadonnés</figcaption>
+        </figure>
+    </div>
+
+
+
 </p>
 <h2>Affichage des métadonnées</h2>
 <p>Les données EXIF peuvent être visualisées grâce à la plupart des logiciels de visualisation et de traitement des images.Mais le principe c’est qu’il s’agisse de formats JPEG et TIFF. Les formats RAW (qui veut dire une image brute) ne prennent pas en charge le standard EXIF.
 Il existe différentes méthodes pour lire les métadonnées. Il s’agit notamment d’outils gratuits spécifiques pour les métadonnées, de navigateurs Internet classiques ou de programmes de photos préinstallés.</p>
-<p><img src="./image/LAMIS_Exif.png" alt=""></p>
+
+<figure class="image-container">
+        <img src="./image/LAMIS_Exif.png" alt="exemple" class="center">
+        <figcaption>propriétés</figcaption>
+    </figure>
+
 <h2>La modification des métadonnées</h2>
-<p>Les métadonnées d’une image (comme la date, l'emplacement, le nom de l,auteur ainsi que d'autres informations provenant de l’appareil photo)sont modifiées à l’aide d’un logiciel adapté.Par exemple,avec un programme comme Adobe Photoshop ou GIMP,il suffit d'abord d’ouvrir l’image ensuite il faut y aller dans les propriétés ou les informations du fichier puis de changer les champs souhaités (titre, description, auteur, etc.) avant d’enregistrer le fichier.En Python,on peut aussi utiliser des bibliothèques spécialisées pour lire et modifier les métadonnées automatiquement. La modification des métadonnées permet d’organiser ses fichiers,d’ajouter des informations importantes ou de corriger des erreurs mais il faut le faire avec précaution car ces données peuvent servir de preuve d’authenticité ou d’information sur l’origine de l’image.</p>
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/_g4j9C7vR9g?si=tcFf4OuPEGp2U8tO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+<p>Les métadonnées d’une image (comme la date, l'emplacement, le nom de l'auteur ainsi que d'autres informations provenant de l’appareil photo)sont modifiées à l’aide d’un logiciel adapté.Par exemple,avec un programme comme Adobe Photoshop ou GIMP,il suffit d'abord d’ouvrir l’image ensuite il faut y aller dans les propriétés ou les informations du fichier puis de changer les champs souhaités (titre, description, auteur, etc.) avant d’enregistrer le fichier.En Python,on peut aussi utiliser des bibliothèques spécialisées pour lire et modifier les métadonnées automatiquement. La modification des métadonnées permet d’organiser ses fichiers,d’ajouter des informations importantes ou de corriger des erreurs mais il faut le faire avec précaution car ces données peuvent servir de preuve d’authenticité ou d’information sur l’origine de l’image.</p>
+
+
+<div class="container">
+        <figure class="iframe-wrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_g4j9C7vR9g?si=tcFf4OuPEGp2U8tO" title="YouTube video player" frameborder="0" allow="allowfullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <figcaption>métadonnés photo</figcaption>
+        </figure>
+    </div>
+
+
 <h2>La perte des données</h2>
-<p>La perte des métadonnées est un problème qui peut survenir une fois que l’image JPEG a été réctifiée et enregistrée grâce à un logiciel de traitement des images. Dans ce cas, les données EXIF ne peuvent pas être conservées et doivent être supprimées par la compression automatique des données. Cela peut se révéler problématique notamment dans le cas où les photos doivent être classées par date,  mais aussi le modèle d’appareil photo ou les paramètres précis de prise de vue.</p>
+<p>La perte des métadonnées est un problème qui peut survenir une fois que l’image JPEG a été réctifiée et enregistrée grâce à un logiciel de traitement des images. Dans ce cas, les données EXIF ne peuvent pas être conservées et doivent être supprimées par la compression automatique des données. Cela peut se révéler problématique notamment dans le cas où les photos doivent être classées par date mais aussi le modèle d’appareil photo ou les paramètres précis de prise de vue.</p>
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-col">
+            <h4>À propos</h4>
+            <p>Une courte description de ton projet ou de ton entreprise.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Navigation</h4>
+            <ul>
+                <li><a href="index5.html">Haut de la page</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <p>Email : contact@exemple.com</p>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2026 MonSite. Tous droits réservés.</p>
+    </div>
+</footer>
 </body>
 </html>

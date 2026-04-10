@@ -1,6 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
 
+  th, td {
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    background-color: #13307f;
+    color: white;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  caption {
+    font-size: 22px;
+    padding: 10px;
+    font-weight: bold;
+  }
 /* Application au body */
 body {
     font-family: 'Inter', sans-serif; /* 'Inter' est la police, 'sans-serif' est la sécurité */

@@ -1,6 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+table {
+      width: 70%;
+      border-collapse: collapse;
+      margin: 30px auto;
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+    }
 
+    th, td {
+      border: 1px solid #1152ba;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #2196F3;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #e8e8e8;
+    }
+
+    tr:hover {
+      background-color: #d0ebff; /* survol */
+    }
 /* Application au body */
 body {
     font-family: 'Inter', sans-serif; /* 'Inter' est la police, 'sans-serif' est la sécurité */
